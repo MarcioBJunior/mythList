@@ -1,0 +1,60 @@
+body, html{
+background-color: whitesmoke;
+margin: 0%;
+padding: 0%;
+}
+
+.menu{
+  padding: 3px;
+  background-color: black;
+  
+}
+
+.title{
+   font-family: 'Sacramento', cursive;
+    text-align: left;
+    color:  white;
+    margin-left: 5%;
+    
+    text-shadow: 15%;
+}
+
+
+ul {
+ list-style: none;
+ text-align: center;
+ color: black;;
+ padding: 1%;
+ margin-bottom: 2%;
+ 
+}
+
+ul li{
+    font-family: cursive;
+    padding: 1%;
+    text-transform: uppercase;
+    
+}
+
+ul li a{
+    padding:4px;
+    margin-left: 10px;
+    font-size: 70%;
+    text-decoration: unset;
+    color: azure;
+    background-color:red;
+    border-radius: 5px;
+    text-transform: initial;
+    
+}
+
+input{
+ 
+	margin-left: 40%;
+    
+}
+
+button {
+   
+}
+
