@@ -12,9 +12,10 @@ padding: 0%;
 
 .board{
     background-color: rgb(0, 0, 0);
-    margin-left: 2%;
-   width: 25%;
-   border-radius: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+   	width: 90%;
+   	border-radius: 20px;
    
 }
 
@@ -106,6 +107,7 @@ input{
 }
 
 input{
+	margin-left: 39%;
     border-radius: 10px;
 }
 
