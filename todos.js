@@ -32,12 +32,18 @@ function renderList (){
 }
 renderList();
 
+
 function addTodo(){
     var text = input.value;
-
-    todos.push(text);
-    input.value = '';
-    renderList();
+    
+    if (text== '' || text.length > 20){
+        alert("O campo está vazio! Ou passou do limite de caracter, Preencha o campo e tente novamente!");
+    }else{
+        todos.push(text);
+        input.value = '';
+        renderList();
+    }
+    
 }
 
 button.onclick = addTodo;
