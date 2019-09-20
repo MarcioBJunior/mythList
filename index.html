@@ -5,42 +5,37 @@
     <title>MYTH LISTA</title>
     <meta charset="utf-8">
     <meta name="viewport" content="480px,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
     <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <div class=menu>
     <h1 class="logo">Myth  Tarefas</h1>
-    <a class="site" target="_blank" href="https://marciobjunior.github.io/">Meu Site</a>
+    <a class="site" target="_blank" href="https://marciobjunior.github.io/">Criador</a>
 </div>
+<h2>Minhas Tarefas</h2>
 <div class="board">
-    <h3>Tarefas 01</h3>
+    
     <div id="app">
         <ul>
-        </ul>
-        <input type="text" placeholder="Nova Tarefa">
-        <button class="myButton">Adicionar</button>
-    </div>
-    
+        </ul>    
+    </div>  
 </div>
-<div class="board">
-    <h3>Tarefas 01</h3>
-    <div id="app">
-        <ul>
-        </ul>
-        <input type="text" placeholder="Nova Tarefa">
+        <input type="text" placeholder="Nova Tarefa" id="input">
         <button class="myButton">Adicionar</button>
-    </div>
-    
-</div>
 
 
 <div class="footer">
    <h4>Todos Direitos Reservados.</br>Márcio Júnior</h4>
 </div>
 
-    <script src="todos.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>
+<script src="js/config.js"></script>
+<script src="js/todoFirebase.js"></script>
+<script src="js/todos.js"></script>
 
 </body>
 
