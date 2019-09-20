@@ -6,16 +6,29 @@ let db = firebase.firestore();
 
 function addTask(task){
     
-    db.collection(collection).add(task)
     
+    db.collection(collection).doc(task.id).set({
+        task
+    })
+    .then(function() {
+        console.log("Document successfully written!");
+    })
+    .catch(function(error) {
+        console.error("Error writing document: ", error);
+    });
+   
 };
             
 
 function removeTask(task){
-    var documento = db.collection(collection);
-    console.log(documento);
-
-   //db.collection(collection).doc()
+   
+   
+    db.collection(collection).doc(task.task.id).delete().then(function() {
+        console.log("Document successfully deleted!");
+    }).catch(function(error) {
+        console.error("Error removing document: ", error);
+    });
+    
         
 };
 
