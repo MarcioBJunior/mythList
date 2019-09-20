@@ -59,6 +59,7 @@ function renderList (){
      //Achar posição do elemento texto na lista para excluir
      var pos = todos.indexOf(todo);
      
+     console.log(pos);
      link.setAttribute('onclick', 'deleteTodo('+pos+')');
      //Adicionar Elementos a Lista ( Texto e Excluir)
      todoElement.appendChild(todoText);
@@ -66,20 +67,31 @@ function renderList (){
      list.appendChild(todoElement);
  }
 }
-//renderList();
+
 
 
 
 function deleteTodo(pos){
+
+    for(task of todos ){
+           
+        if(todos.indexOf(task) == pos){
+
+            removeTask(task);
+        }else{
+            console.log("ELSE"); 
+        }
+    }
     
-    //deleteTodo(pos, 1);
-    //renderList();
 }
 
 dataRefresh( function(snapshot){
     todos = [];
+
     snapshot.forEach(doc => {
         todos.push(doc.data());
     })
+
     renderList();
+
 })
