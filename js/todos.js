@@ -1,8 +1,12 @@
 var list = document.querySelector('#app ul');
 var input = document.querySelector('#input');
 var button = document.querySelector('.myButton');
+var title = document.querySelector('#title');
 
 var todos = [];
+
+     var titulo = document.createTextNode('Tarefas '+ collec);
+     title.appendChild(titulo);
 
 function idGenerator(){
     let timestamp = new Date();

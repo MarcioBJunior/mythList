@@ -1,6 +1,4 @@
 @media screen and (max-width: 720px) {
-
-
     
 .logo{
 	font-family: 'Sacramento', cursive;
@@ -54,5 +52,36 @@ ul li{
 	width: 100%;
  
 }
+
+.inputEntrar{
+	margin-top: 30%;
+	margin-left: 8%;
+	width: 50%;
+}
+
+h3{
+	margin-top: 40%;
+	font-size: 90%;
+}
+
+
+
+@media screen and (max-width: 320px) {
+	.inputEntrar{
+		margin-top: 30%;
+		margin-left: 10%;
+		width: 40%;
+	}
+	
+	h3{
+		margin-top: 40%;
+		font-size: 75%;
+	}
+	
+	}
+
+	
+}
+@media screen and (max-width: 768px) {
 
 }

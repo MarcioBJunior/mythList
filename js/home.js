@@ -1,18 +1,16 @@
 var login = document.querySelector('#inColle');
 var btnEntrar = document.querySelector('.btnEntrar');
-var collec = '';
 
-btnEntrar.onclick = logar;
+btnEntrar.addEventListener("click", logar);
 
 function logar() {
 
-    collec = login.value;
-
-    if (collec === '' || collec.length > 40) {
+    if (login.value === '' || login.value.length > 40) {
         alert("O campo está vazio! Ou passou do limite de caracter, Preencha o campo e tente novamente!");
     } else {
+        //Chamando a página passando um valor
         
-        window.location.href = "tarefas.html";
+        window.location = "tarefas.html?collec="+login.value;
        
     }
 }
