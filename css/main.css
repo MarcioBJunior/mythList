@@ -154,7 +154,7 @@ color: black;
 	background: linear-gradient(-45deg, #000000, #e21616, #4524a0, #000000);
 	background-size: 400% 400%;
 	animation: gradientBG 15s ease infinite;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
  
