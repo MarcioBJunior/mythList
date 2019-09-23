@@ -1,8 +1,8 @@
 firebase.initializeApp(firebaseConfig);
 
-const collection = "todo";
+    let collection =  collec;
+    let db = firebase.firestore();
 
-let db = firebase.firestore();
 
 function addTask(task){
     
