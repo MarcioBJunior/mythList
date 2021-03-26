@@ -10,8 +10,8 @@ height: 100%;
 	display: block;
 	border-bottom: solid 1px;
 	border-color: #cecece;
-	background: #ffffff;
-	z-index: 1;
+	background-color: #ffffff;
+	z-index: 3;
 	height: 100px;
     position: fixed;
     top: 0;
@@ -78,6 +78,8 @@ height: 100%;
 	margin:auto;
 	vertical-align: middle;
 	width: 1200px;
+	padding-top: 150px;
+	padding-bottom: 150px;
 }
 
 .sub {
@@ -106,42 +108,56 @@ height: 100%;
 }
 
 .inputEntrar{
-	border:0;
-	width: 80%;
+	border: solid 1px;
+	border-right: 0;
+	border-color: #eeeeee;
+	width: 75%;
 	padding: 10px 10px;
 	color: black;
 	font-family: 'lexend';
 	font-weight: 600;
-	box-shadow: -10px 1px 30px rgb(0 0 0 / 10%);
+	box-shadow: -10px 1px 30px rgb(0 0 0 / 15%);
 	border-radius: 5px 0 0 5px;
 	z-index: 2;
 
 }
 
 input::placeholder{
-color: rgb(59, 59, 59);
+color: rgb(97, 96, 96);
 }
 
 .btnEntrar{
-	border:0;
-	border-radius: 0;
-	background-color: #ffffff;
+	cursor: pointer;
+	width: 25%;
+	display: flex;
+	border: solid 1px;
+	border-left: 0;
+	border-color: #eeeeee;
+	font-size: 14px;
 	font-family: 'lexend';
 	font-weight: 600;
-	box-shadow: 10px 1px 30px rgb(0 0 0 / 10%);
+	box-shadow: 10px 1px 30px rgb(0 0 0 / 15%);
 	border-radius: 0 5px 5px 0;
+	transition: 0.5s;
+}
+
+.btnEntrar:hover {
+	background-color: #dddddd;
 }
 
 .footer{
 	text-align: center;
-	position: fixed;
+	position:fixed;
 	bottom: 0;
 	width: 100%;
 	border-top: solid 1px;
 	border-color: #cecece;
 	height: 50px;
+	background-color: #ffffff;
+	z-index: 2;
 
 }
+
 .p3{
 	color: black;
 	font-family: 'lexend';
@@ -149,43 +165,106 @@ color: rgb(59, 59, 59);
 	font-size: 14px;
 }
 
+#title {
+	color: #1f1f1f;
+	text-align: center;
+ 	font-family: 'lexend';
+	font-weight: 300;
+}
+
+#input{
+	border: solid 1px;
+	border-right: 0;
+	border-color: #eeeeee;
+	width: 80%;
+	padding: 10px 10px;
+	color: black;
+	font-family: 'lexend';
+	font-weight: 600;
+	box-shadow: -10px 1px 30px rgb(0 0 0 / 15%);
+	border-radius: 5px 0 0 5px;
+	z-index: 2;
+
+}
+
+input::placeholder{
+color: rgb(97, 96, 96);
+}
+
+.myButton{
+	cursor: pointer;
+	width: 20%;
+	display: flex;
+	border: solid 1px;
+	border-left: 0;
+	font-size: 14px;
+	border-color: #eeeeee;
+	background-color: #ffffff;
+	font-family: 'lexend';
+	font-weight: 600;
+	box-shadow: 10px 1px 30px rgb(0 0 0 / 15%);
+	border-radius: 0 5px 5px 0;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+.myButton:hover {
+	background-color: #dddddd;
+}
+
+.pbtn{
+	margin: auto;
+	cursor: pointer;
+}
+
 .board{
-	margin-top: 1%;
-	background-color: black;
-	max-height: 50%;
-	overflow-y: scroll;
-	margin-left: 20%;
-	margin-right: 20%;
-   	width: 60%;
+	margin-top: 50px;
+	width: 100%;
 }
 
-ul {
- list-style: none;
- text-align: center;
- color: whitesmoke;
- padding: 1%;
-
- margin-bottom: 2%;
- font-family: cursive;
+#app {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
 }
 
-ul li{
-    font-family: cursive;
-    padding: 1%;
-    font-weight: bold;
-    text-transform: uppercase;
-    
+.card{
+	text-align: left;
+	color: rgb(56, 56, 56);
+    font-family: 'lexend';
+	width: 20%;
+    font-weight: 400;
+    border: solid 1px;
+    padding: 20px;
+	padding-top: 10px;
+    margin: 5px;
+	border-radius: 5px;
+	border-color: #cecece;
+	box-shadow: 0px 0px 5px rgb(0 0 0 / 15%);
+	transition: 0.5s;
 }
 
-ul li a{
-    padding:4px;
-    margin-left: 10px;
-    font-size: 60%;
+.card:hover{
+	box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
+}
+
+.card a{
+    padding:3px 6px 3px 6px;
+	margin-right: -10px;
+    font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
     text-decoration: unset;
-    color: azure;
+    color: rgb(75, 77, 77);
+	background-color: #ffffff;
+    border-radius: 100%;
+    text-transform:uppercase;
+	transition: 0.5s;
+	float: right;
+}
+
+.card a:hover {
+	color: #ffffff;
     background-color:red;
-    border-radius: 10px;
-    text-transform: initial;
-    
 }
 

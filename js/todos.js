@@ -1,11 +1,11 @@
-var list = document.querySelector('#app ul');
+var list = document.querySelector('#app');
 var input = document.querySelector('#input');
 var button = document.querySelector('.myButton');
 var title = document.querySelector('#title');
 
 var todos = [];
 
-     var titulo = document.createTextNode('Tarefas '+ collec);
+     var titulo = document.createTextNode('Tarefas da lista: '+ collec);
      title.appendChild(titulo);
 
 function idGenerator(){
@@ -50,14 +50,16 @@ function renderList (){
 
  for( todo of todos){
     
-     var todoElement = document.createElement('li');
+     var todoElement = document.createElement('div');
+     todoElement.classList.add("card")
      var todoText = document.createTextNode(todo.task.data.desc);
      
      //CRIAR EXCLUIR
      var link = document.createElement('a');
      link.setAttribute('href', '#');
-     var linkText = document.createTextNode('Excluir');
+     var linkText = document.createTextNode('X');
      link.appendChild(linkText);
+     var br = document.createElement('br');
      
      //Achar posição do elemento texto na lista para excluir
      var pos = todos.indexOf(todo);
@@ -65,8 +67,9 @@ function renderList (){
      console.log(pos);
      link.setAttribute('onclick', 'deleteTodo('+pos+')');
      //Adicionar Elementos a Lista ( Texto e Excluir)
-     todoElement.appendChild(todoText);
      todoElement.appendChild(link);
+     todoElement.appendChild(br);
+     todoElement.appendChild(todoText);
      list.appendChild(todoElement);
  }
 }
